@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	p := new(int)
-	fmt.Println(*p)
-	*p=45
-	fmt.Println(*p)
+	pointer:=10
+	fmt.Println("Before Modifing using pointer",pointer)
+	after:=&pointer
+	*after=25
+	fmt.Println("After changine value using Pointer",*after)
 }
